@@ -19,5 +19,3 @@ execute if entity @s[scores={ipe_function=70}] at @s as @e[type=immersive_portal
 # z
 execute if entity @s[scores={ipe_function=71}] at @s as @e[type=immersive_portals:portal,tag=selected] run portal rotate_portal_body 0 0 1 -.5
 execute if entity @s[scores={ipe_function=72}] at @s as @e[type=immersive_portals:portal,tag=selected] run portal rotate_portal_body 0 0 1 .5
-#reload menu to hide trigger message
-function ipe:menu/rotate/rotate_main

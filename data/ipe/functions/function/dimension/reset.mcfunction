@@ -15,8 +15,7 @@ data modify storage minecraft:ip_edit Dimension.cycle set from storage minecraft
 #update cycle pos score
 scoreboard players set cycle_pos dimension_info 1
 
-# update menu
-scoreboard players set @s ipe_menu 4
+
 
 
 

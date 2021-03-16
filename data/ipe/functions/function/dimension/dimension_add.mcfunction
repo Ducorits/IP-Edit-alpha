@@ -17,5 +17,3 @@ execute unless score index_match dimension_info matches 0 if score index_end dim
 #if dimension is in index message function caller that dimension is already in index
 execute if score index_match dimension_info matches 0 run title @s actionbar [{"text":"Current dimension already in index. ","color":"red"},{"text":"(","color":"red"},{"score":{"name":"index_loop_count","objective":"dimension_info"},"color":"blue"},{"text":" of ","color":"blue"},{"score":{"name":"index_size","objective":"dimension_info"},"color":"blue"},{"text":").","color":"red"}]
 
-# update menu
-scoreboard players set @s ipe_menu 4
