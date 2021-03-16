@@ -1,3 +1,0 @@
-execute as @s[tag=!chose,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Tags:["rotate_x"]}}}] run function ip:ip_edit/rotate/body/x/x_main
-execute as @s[tag=!chose,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Tags:["rotate_y"]}}}] run function ip:ip_edit/rotate/body/y/y_main
-execute as @s[tag=!chose,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Tags:["rotate_z"]}}}] run function ip:ip_edit/rotate/body/z/z_main
