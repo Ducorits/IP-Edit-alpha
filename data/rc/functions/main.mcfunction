@@ -1,0 +1,2 @@
+# Run as all players that dont have a score in the rc_id scoreboard so we can give them one. This is used in identifying what player sent a raycast.
+execute as @a unless entity @s[scores={rc_id=0..}] run function rc:set_rc_id

@@ -1,0 +1,5 @@
+particle minecraft:flame ~ ~ ~ 0 0 0 .1 20 force @a[tag=rc_particle]
+particle minecraft:explosion ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[tag=rc_particle]
+particle minecraft:flash ~ ~ ~ 0 0 0 0 1 force @a[tag=rc_particle]
+particle minecraft:smoke ~ ~ ~ 0.1 0.1 0.1 0.05 5 force @a[tag=rc_particle]
+particle minecraft:lava ~ ~ ~ 0.1 0.1 0.1 0.1 3 force @a[tag=rc_particle]

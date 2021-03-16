@@ -1,0 +1,1 @@
+particle minecraft:flame ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[tag=rc_particle]

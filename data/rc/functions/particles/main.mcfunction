@@ -1,0 +1,32 @@
+execute if score @s rc_particle_id matches 1 run function rc:particles/ambient_entity_effect
+execute if score @s rc_particle_id matches 2 run function rc:particles/angry_villager
+execute if score @s rc_particle_id matches 3 run function rc:particles/ash
+execute if score @s rc_particle_id matches 4 run function rc:particles/barrier
+execute if score @s rc_particle_id matches 5 run function rc:particles/block
+execute if score @s rc_particle_id matches 6 run function rc:particles/bubble
+execute if score @s rc_particle_id matches 7 run function rc:particles/bubble_pop
+execute if score @s rc_particle_id matches 8 run function rc:particles/bubble_column_up
+execute if score @s rc_particle_id matches 9 run function rc:particles/campfire_cosy_smoke
+execute if score @s rc_particle_id matches 10 run function rc:particles/campfire_signal_smoke
+execute if score @s rc_particle_id matches 11 run function rc:particles/cloud
+execute if score @s rc_particle_id matches 12 run function rc:particles/composter
+execute if score @s rc_particle_id matches 13 run function rc:particles/crimson_spore
+execute if score @s rc_particle_id matches 14 run function rc:particles/crit
+execute if score @s rc_particle_id matches 15 run function rc:particles/current_down
+execute if score @s rc_particle_id matches 16 run function rc:particles/damage_indicator
+execute if score @s rc_particle_id matches 17 run function rc:particles/dolphin
+execute if score @s rc_particle_id matches 18 run function rc:particles/dragon_breath
+execute if score @s rc_particle_id matches 19 run function rc:particles/dripping_honey
+execute if score @s rc_particle_id matches 20 run function rc:particles/dripping_lava
+execute if score @s rc_particle_id matches 21 run function rc:particles/dripping_obsidian_tear
+execute if score @s rc_particle_id matches 22 run function rc:particles/dripping_water
+execute if score @s rc_particle_id matches 23 run function rc:particles/dust
+execute if score @s rc_particle_id matches 24 run function rc:particles/effect
+execute if score @s rc_particle_id matches 25 run function rc:particles/enchant
+execute if score @s rc_particle_id matches 26 run function rc:particles/enchanted_hit
+execute if score @s rc_particle_id matches 27 run function rc:particles/end_rod
+execute if score @s rc_particle_id matches 28 run function rc:particles/etity_effect
+execute if score @s rc_particle_id matches 29 run function rc:particles/explosion
+execute if score @s rc_particle_id matches 30 run function rc:particles/explosion_emitter
+
+
