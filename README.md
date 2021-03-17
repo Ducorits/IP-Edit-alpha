@@ -3,6 +3,7 @@ Early version of a minecraft datapack intended to make editing, and making porta
 
 
 === How to use ===
+
 First up you will need the edit wand.
 To obatain the wand throw an "eye of ender" and a "warped fungus on a stick" together on the ground, wait a bit and BAM you got a wand.
 
