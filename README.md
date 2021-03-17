@@ -1,5 +1,5 @@
 # IP-Edit-alpha
-Early version of a minecraft datapack intended to make editing, and making portals from immersive portals easier.
+Early version of a minecraft datapack intended to make making and editing portals from immersive portals easier.
 
 
 === How to use ===
