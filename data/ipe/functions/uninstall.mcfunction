@@ -4,8 +4,6 @@ scoreboard objectives remove ip_edit
 # portal scoreboards
 scoreboard objectives remove portal_width
 scoreboard objectives remove portal_height
-scoreboard objectives remove portal_width_offset
-scoreboard objectives remove portal_height_offset
 
 # dimension scoreboards
 scoreboard objectives remove dimension_info

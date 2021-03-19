@@ -9,8 +9,6 @@ scoreboard objectives add ip_edit dummy
 # portal scoreboards
 scoreboard objectives add portal_width dummy
 scoreboard objectives add portal_height dummy
-scoreboard objectives add portal_width_offset dummy
-scoreboard objectives add portal_height_offset dummy
 
 # dimension scoreboards
 scoreboard objectives add dimension_info dummy
