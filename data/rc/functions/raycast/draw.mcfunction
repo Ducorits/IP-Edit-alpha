@@ -1,5 +1,5 @@
 #update score used to limit the distance the ray can travel
-scoreboard players add @s raycastCount 1
+scoreboard players remove @s rc_count 1
 
 # detect if the ray hit a block
 execute unless block ~ ~ ~ air run function rc:raycast/blockhit

@@ -1,4 +1,4 @@
-function rc:raycast/draw
+function rc:raycast/start
 
 execute at @s as @e[type=immersive_portals:portal,tag=last_hit] unless score @s ip_owner_id = @p rc_id run scoreboard players operation @s ip_owner_id = @p rc_id
 

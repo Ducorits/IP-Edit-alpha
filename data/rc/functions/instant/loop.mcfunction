@@ -6,7 +6,7 @@ execute unless block ~ ~ ~ air run function rc:instant/blockhit
 
 # detect if the ray hit an entity
 execute if predicate rc:raystop run tag @e remove last_hit
-#execute if entity @e[dx=0,limit=1] positioned ~-.99 ~-.99 ~-.99 if entity @e[dx=0,limit=1] positioned ~.99 ~.99 ~.99 run function rc:instant/entityhit
+execute if entity @e[dx=0,limit=1] positioned ~-.99 ~-.99 ~-.99 if entity @e[dx=0,limit=1] positioned ~.99 ~.99 ~.99 run function rc:instant/entityhit
 
 #perform tasks to stop the raycast and get endpoint data
 execute if predicate rc:raystop run function rc:instant/stop

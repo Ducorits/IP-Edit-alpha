@@ -2,7 +2,7 @@
 scoreboard objectives remove r_clicked
 scoreboard objectives remove rc_id 
 scoreboard objectives remove rc_count
-scoreboard objectives remove rc_cont 
+scoreboard objectives remove rc_const 
 scoreboard objectives remove rc_system 
 
 scoreboard objectives remove rayX 
