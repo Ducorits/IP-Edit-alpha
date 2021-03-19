@@ -4,6 +4,7 @@ scoreboard objectives remove rc_id
 scoreboard objectives remove rc_count
 scoreboard objectives remove rc_const 
 scoreboard objectives remove rc_system 
+scoreboard objectives remove rc_hitbox
 
 scoreboard objectives remove rayX 
 scoreboard objectives remove rayY 

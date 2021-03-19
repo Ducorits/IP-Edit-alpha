@@ -3,26 +3,26 @@
 # To do so go to this data > minecraft > tags > functions > load
 # that file says what functions get played on load.
 
-
+# main scoreboard
 scoreboard objectives add ip_edit dummy
-#scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time
 
+# portal scoreboards
 scoreboard objectives add portal_width dummy
 scoreboard objectives add portal_height dummy
 scoreboard objectives add portal_width_offset dummy
 scoreboard objectives add portal_height_offset dummy
 
-# dimension stuff
+# dimension scoreboards
 scoreboard objectives add dimension_info dummy
 function ipe:function/dimension/reset
 
-#d estination stuff
+# destination scoreboards
 scoreboard objectives add destinationX dummy
 scoreboard objectives add destinationY dummy
 scoreboard objectives add destinationZ dummy
 
 
-#new menu stuff
+#menu scoreboards
 scoreboard objectives add ipe_menu trigger
 scoreboard objectives add ipe_function trigger
 scoreboard objectives add ipe_mode trigger
@@ -31,10 +31,10 @@ scoreboard players enable @a ipe_function
 scoreboard players enable @a ipe_menu
 scoreboard players enable @a ipe_mode
 
-#start loops
+# start loops
 function ipe:wand/loop
 
-#other new stuff
+# other new scoreboards
 scoreboard objectives add ipe_drop minecraft.dropped:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add ipe_click minecraft.used:minecraft.warped_fungus_on_a_stick
 
