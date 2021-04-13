@@ -36,3 +36,7 @@ function ipe:wand/loop
 scoreboard objectives add ipe_drop minecraft.dropped:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add ipe_click minecraft.used:minecraft.warped_fungus_on_a_stick
 
+
+# set constants
+scoreboard players set %2 ip_edit 2
+

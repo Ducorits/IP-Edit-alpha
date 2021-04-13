@@ -12,23 +12,23 @@ scoreboard players reset @s cor0Z
 scoreboard players reset @s cor1Z
 
 #start raycast
-execute at @s anchored eyes positioned ^ ^ ^.5 run function rc:raycast/draw
+execute at @s anchored eyes positioned ^ ^ ^.5 run function rc:raycast/start
 
 #get heigth of selected portals
 execute as @e[tag=selected,type=immersive_portals:portal] store result score @s portal_height run data get entity @s height 1000
-execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_height /= 2 ip_edit
+execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_height /= %2 ip_edit
 
 #get width of selected portals
 execute as @e[tag=selected,type=immersive_portals:portal] store result score @s portal_width run data get entity @s width 1000
-execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_width /= 2 ip_edit
+execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_width /= %2 ip_edit
 
 #get height offset of selected portals
 #execute as @e[tag=selected,type=immersive_portals:portal] store result score @s portal_height_offset run data get entity @s height 1000
-#execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_height_offset %= 2 ip_edit
+#execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_height_offset %= %2 ip_edit
 
 #get width offset of selected portals
 #execute as @e[tag=selected,type=immersive_portals:portal] store result score @s portal_width_offset run data get entity @s width 1000
-#execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_width_offset %= 2 ip_edit
+#execute as @e[tag=selected,type=immersive_portals:portal] run scoreboard players operation @s portal_width_offset %= %2 ip_edit
 
 
 execute at @e[tag=endpoint_pos] align xyz run summon minecraft:area_effect_cloud ~.5 ~.5 ~.5 {Duration:0,Particle:"block minecraft:air",Radius:0,Tags:["destination_pos"]}
