@@ -2,6 +2,7 @@
 
 # detect if you right clicked the wand in your main hand and run a function if so
 execute as @e[scores={ipe_click=1..},nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["ip_edit"]}}}] run function ipe:select_used_item
+
 # detect if you right clicked the wand in your off hand and run a function if so
 execute as @e[scores={ipe_click=1..},nbt={Inventory:[{Slot: -106b, id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["ip_edit"]}}]}] run function ipe:select_offhand
 

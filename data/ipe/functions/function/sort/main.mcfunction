@@ -33,5 +33,8 @@ execute if score @s ipe_function matches 201..300 run function ipe:menu/destinat
 execute if score @s ipe_function matches 301..400 run function ipe:menu/mode/mode_main
 execute if score @s ipe_function matches 401..500 run function ipe:menu/edit_connected/edit_connected_main
 
+# SOUND :)
+execute at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ .5 .8 0
+
 scoreboard players reset @s ipe_function
 scoreboard players enable @s ipe_function
