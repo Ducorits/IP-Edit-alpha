@@ -14,6 +14,8 @@ data modify storage minecraft:ip_edit Dimension.index append value "immersive_po
 data modify storage minecraft:ip_edit Dimension.cycle set from storage minecraft:ip_edit Dimension.index
 #update cycle pos score
 scoreboard players set cycle_pos dimension_info 1
+#update index size score
+execute store result score index_size dimension_info if data storage minecraft:ip_edit Dimension.index[]
 
 
 

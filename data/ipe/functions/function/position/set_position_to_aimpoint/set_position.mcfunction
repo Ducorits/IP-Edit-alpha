@@ -57,7 +57,12 @@ execute as @e[tag=destination_pos] store result entity @s Pos[0] double 0.001 ru
 execute as @e[tag=destination_pos] store result entity @s Pos[1] double 0.001 run scoreboard players get destinationY ip_edit
 execute as @e[tag=destination_pos] store result entity @s Pos[2] double 0.001 run scoreboard players get destinationZ ip_edit
 
-# set portal destination to entity used
-portal set_portal_destination_to @e[tag=destination_pos,limit=1]
+# set portal position to entity used
+#portal set_portal_destination_to @e[tag=destination_pos,limit=1]
+data modify entity @s Pos set from entity @e[tag=destination_pos,limit=1] Pos
+
+# update portal visually
+portal set_portal_nbt {Fire:0s}
+
 # kill entity used to set destination
 kill @e[tag=destination_pos,limit=1]

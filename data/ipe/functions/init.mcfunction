@@ -14,10 +14,12 @@ scoreboard objectives add portal_height dummy
 scoreboard objectives add dimension_info dummy
 function ipe:function/dimension/reset
 
-# destination scoreboards
-scoreboard objectives add destinationX dummy
-scoreboard objectives add destinationY dummy
-scoreboard objectives add destinationZ dummy
+# destination scoreboards (unused)
+# scoreboard objectives add destinationX dummy
+# scoreboard objectives add destinationY dummy
+# scoreboard objectives add destinationZ dummy
+
+# portal body rotation scoreboards used in position and destination (unused)
 
 
 #menu scoreboards
@@ -39,4 +41,6 @@ scoreboard objectives add ipe_click minecraft.used:minecraft.warped_fungus_on_a_
 
 # set constants
 scoreboard players set %2 ip_edit 2
+scoreboard players set %1 ip_edit 1
+scoreboard players set %1000 ip_edit 1000
 
