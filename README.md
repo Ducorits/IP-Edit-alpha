@@ -15,4 +15,4 @@ Navigate the menu by clicking the text.
 Select wand mode refers to the offhand use of the item.
 Offhand can have different functions (modes) assigned to it.
 
-NOTE: Dimension menu is still buggy and unrefined (but it works), not all buttons have a function. I will make an uninstall option later to clean up everything if you so desire.
+NOTE: Dimension menu is still buggy and unrefined (but it works), not all buttons have a function.
