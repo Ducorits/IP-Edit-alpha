@@ -1,21 +1,29 @@
-#get heigth of selected portals
+#get heigth of selected portal
 execute store result score @s portal_height run data get entity @s height 1000
 #scoreboard players operation @s portal_height /= %2 ip_edit
 
-#get width of selected portals
+#get width of selected portal
 execute store result score @s portal_width run data get entity @s width 1000
 #scoreboard players operation @s portal_width /= %2 ip_edit
 
-#get height offset of selected portals
+#get height offset of selected portal
 #executestore result score @s portal_height_offset run data get entity @s height 1000
 #scoreboard players operation @s portal_height_offset %= %2 ip_edit
 
-#get width offset of selected portals
+#get width offset of selected portal
 #executestore result score @s portal_width_offset run data get entity @s width 1000
 #scoreboard players operation @s portal_width_offset %= %2 ip_edit
 
 
+
 execute at @e[tag=endpoint_pos] align xyz run summon minecraft:area_effect_cloud ~.5 ~.5 ~.5 {Duration:0,Particle:"block minecraft:air",Radius:0,Tags:["destination_pos"]}
+
+# set portal destination to entity used
+portal set_portal_destination_to @e[tag=destination_pos,limit=1]
+
+portal complete_bi_way_portal
+
+execute at @e[tag=destination_pos] run tag @e[type=immersive_portals:portal,distance=0..0.1] add temp_p
 
 
 execute as @e[tag=destination_pos] store result score destinationX ip_edit run data get entity @s Pos[0] 1000
@@ -32,12 +40,12 @@ execute as @e[tag=destination_pos] store result score destinationZ ip_edit run d
 #execute if score directionZ rc_system matches -1000..-707 run say +Z
 
 # get portal rotation data
-execute as @e[tag=selected] store result score axisHX ip_edit run data get entity @s axisHX 1000
-execute as @e[tag=selected] store result score axisHY ip_edit run data get entity @s axisHY 1000
-execute as @e[tag=selected] store result score axisHZ ip_edit run data get entity @s axisHZ 1000
-execute as @e[tag=selected] store result score axisWX ip_edit run data get entity @s axisWX 1000
-execute as @e[tag=selected] store result score axisWY ip_edit run data get entity @s axisWY 1000
-execute as @e[tag=selected] store result score axisWZ ip_edit run data get entity @s axisWZ 1000
+execute as @e[tag=temp_p] store result score axisHX ip_edit run data get entity @s axisHX 1000
+execute as @e[tag=temp_p] store result score axisHY ip_edit run data get entity @s axisHY 1000
+execute as @e[tag=temp_p] store result score axisHZ ip_edit run data get entity @s axisHZ 1000
+execute as @e[tag=temp_p] store result score axisWX ip_edit run data get entity @s axisWX 1000
+execute as @e[tag=temp_p] store result score axisWY ip_edit run data get entity @s axisWY 1000
+execute as @e[tag=temp_p] store result score axisWZ ip_edit run data get entity @s axisWZ 1000
 
 #determine wich side
 #+X
@@ -59,5 +67,6 @@ execute as @e[tag=destination_pos] store result entity @s Pos[2] double 0.001 ru
 
 # set portal destination to entity used
 portal set_portal_destination_to @e[tag=destination_pos,limit=1]
-# kill entity used to set destination
+# kill entities used to set destination
+kill @e[tag=temp_p,limit=1]
 kill @e[tag=destination_pos,limit=1]
