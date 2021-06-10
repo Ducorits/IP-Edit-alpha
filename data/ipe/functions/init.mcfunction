@@ -10,6 +10,9 @@ scoreboard objectives add ip_edit dummy
 scoreboard objectives add portal_width dummy
 scoreboard objectives add portal_height dummy
 
+# linked portal scoreboards
+scoreboard objectives add ipe_mid_distance dummy
+
 # dimension scoreboards
 scoreboard objectives add dimension_info dummy
 function ipe:function/dimension/reset
@@ -42,5 +45,6 @@ scoreboard objectives add ipe_click minecraft.used:minecraft.warped_fungus_on_a_
 # set constants
 scoreboard players set %2 ip_edit 2
 scoreboard players set %1 ip_edit 1
+scoreboard players set %-1 ip_edit -1
 scoreboard players set %1000 ip_edit 1000
 

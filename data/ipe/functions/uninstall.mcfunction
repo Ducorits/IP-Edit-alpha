@@ -5,6 +5,9 @@ scoreboard objectives remove ip_edit
 scoreboard objectives remove portal_width
 scoreboard objectives remove portal_height
 
+# linked portal scoreboards
+scoreboard objectives remove ipe_mid_distance
+
 # dimension scoreboards
 scoreboard objectives remove dimension_info
 data remove storage minecraft:ip_edit Dimension
