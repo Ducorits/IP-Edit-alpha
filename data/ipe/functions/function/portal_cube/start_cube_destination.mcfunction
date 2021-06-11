@@ -23,4 +23,4 @@ scoreboard players operation blockSideZ rc_system -= @s Zpos
 
 execute at @e[tag=endpoint_pos] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:2147483647,Particle:"block minecraft:air",Radius:0,Tags:["destpoint_pos"]}
 
-execute as @e[tag=selected,type=immersive_portals:portal] run function ipe:function/multi_portal/set_cube_destination
+execute as @e[tag=selected,type=immersive_portals:portal] run function ipe:function/portal_cube/set_cube_destination

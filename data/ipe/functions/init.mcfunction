@@ -47,4 +47,5 @@ scoreboard players set %2 ip_edit 2
 scoreboard players set %1 ip_edit 1
 scoreboard players set %-1 ip_edit -1
 scoreboard players set %1000 ip_edit 1000
+scoreboard players set %10000 ip_edit 10000
 
