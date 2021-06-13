@@ -34,6 +34,10 @@ scoreboard objectives add ipe_mode trigger
 # start loops
 function ipe:wand/loop
 
+# schedule
+schedule function ipe:enable_triggers 10t replace
+
+
 # other new scoreboards
 scoreboard objectives add ipe_drop minecraft.dropped:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add ipe_click minecraft.used:minecraft.warped_fungus_on_a_stick
