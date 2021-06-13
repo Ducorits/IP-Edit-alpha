@@ -23,5 +23,9 @@ scoreboard players enable @a ipe_mode
 execute as @a[scores={ipe_click=1..}] run scoreboard players reset @s ipe_click
 execute as @a[scores={ipe_drop=1..}] run scoreboard players reset @s ipe_drop
 
+# enable triggers for players that dont have them enabled and then give them a tag to signify they have.
+execute as @a[tag=!ipe_enabled] run function ipe:enable_triggers
+
+
 # reset unused score. (need to remove scoreboard from pack)
-execute as @a[scores={r_clicked=1..}] run scoreboard players reset @a r_clicked
+# execute as @a[scores={r_clicked=1..}] run scoreboard players reset @a r_clicked

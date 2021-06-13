@@ -1,5 +1,5 @@
 # instant raycast scoreboards
-scoreboard objectives add r_clicked minecraft.used:minecraft.carrot_on_a_stick
+# scoreboard objectives add r_clicked minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rc_id dummy
 scoreboard objectives add rc_count dummy
 scoreboard objectives add rc_const dummy

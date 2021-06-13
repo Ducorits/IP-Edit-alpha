@@ -51,9 +51,9 @@ scoreboard objectives remove cor7Y
 scoreboard objectives remove cor7Z
 
 # slow raycast scoreboards
-scoreboard objectives remove rc_steps 
-scoreboard objectives remove rc_particle_end 
-scoreboard objectives remove rc_particle_id 
-scoreboard objectives remove rc_duration 
-scoreboard objectives remove rc_age 
-scoreboard objectives remove rc_current_step 
+# scoreboard objectives remove rc_steps 
+# scoreboard objectives remove rc_particle_end 
+# scoreboard objectives remove rc_particle_id 
+# scoreboard objectives remove rc_duration 
+# scoreboard objectives remove rc_age 
+# scoreboard objectives remove rc_current_step 

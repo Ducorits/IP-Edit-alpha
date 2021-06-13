@@ -30,9 +30,6 @@ scoreboard objectives add ipe_menu trigger
 scoreboard objectives add ipe_function trigger
 scoreboard objectives add ipe_mode trigger
 
-scoreboard players enable @a ipe_function
-scoreboard players enable @a ipe_menu
-scoreboard players enable @a ipe_mode
 
 # start loops
 function ipe:wand/loop

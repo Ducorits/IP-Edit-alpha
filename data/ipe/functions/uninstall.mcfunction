@@ -1,3 +1,4 @@
+# # This function uninstalls all of the datapack by removing scoreboards and tags used.
 # main scoreboard
 scoreboard objectives remove ip_edit
 
@@ -26,6 +27,9 @@ scoreboard objectives remove ipe_mode
 # other scoreboards
 scoreboard objectives remove ipe_drop
 scoreboard objectives remove ipe_click
+
+# tags
+tag @a remove ipe_enabled
 
 # stop loops
 schedule clear ipe:wand/loop
