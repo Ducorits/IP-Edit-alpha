@@ -23,7 +23,7 @@ scoreboard players operation @e[tag=ipe_this] ipe_mid_distance = %math ip_edit
 
 # calculate offset from midpoint (this is really doable because it is a box, so happy!)
 scoreboard players operation %math ip_edit = @e[tag=ipe_this] ipe_box_midZ
-scoreboard players operation %math ip_edit += @e[tag=ipe_this] ipe_mid_distance
+scoreboard players operation %math ip_edit -= @e[tag=ipe_this] ipe_mid_distance
 
 # set portal position to position it should have (hey i am telling what i am doing, just not how i am doing it...)
 execute as @e[tag=ipe_this] store result entity @s Pos[0] double 0.0001 run scoreboard players get @s ipe_box_midX

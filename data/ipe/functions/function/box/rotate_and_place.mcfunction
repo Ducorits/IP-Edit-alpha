@@ -13,7 +13,7 @@ execute store result score @s Ypos run data get entity @s Pos[1] 10000
 execute store result score @s Zpos run data get entity @s Pos[2] 10000
 
 ### get portal rotation data
-execute as @s run portal relatively_move_portal 0 0 -1
+execute as @s run portal relatively_move_portal 0 0 1
 
 execute store result score destinationX ip_edit run data get entity @s Pos[0] 10000
 execute store result score destinationY ip_edit run data get entity @s Pos[1] 10000

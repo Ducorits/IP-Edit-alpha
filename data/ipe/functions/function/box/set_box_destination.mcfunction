@@ -1,4 +1,4 @@
-# portal remove_connected_portals
+portal remove_connected_portals
 
 # get position of destination point
 # execute as @e[tag=destpoint_pos] store result score PosX ip_edit run data get entity @s Pos[0] 10000
@@ -14,7 +14,7 @@ execute store result score destinationY ip_edit run data get entity @s destinati
 execute store result score destinationZ ip_edit run data get entity @s destinationZ 10000
 
 ### get portal rotation data in the form of a unit vector
-execute as @s run portal relatively_move_portal_destination 0 0 -1
+execute as @s run portal relatively_move_portal_destination 0 0 1
 
 execute store result score vecX ip_edit run data get entity @s destinationX 10000
 execute store result score vecY ip_edit run data get entity @s destinationY 10000
@@ -53,7 +53,7 @@ execute store result entity @s destinationZ double 0.0001 run scoreboard players
 
 # update portal visually
 portal set_portal_nbt {Fire:0s}
-# portal complete_bi_way_portal
+portal complete_bi_way_portal
 
 # kill entities used to set destination
 # kill @e[tag=destination_pos,limit=1]

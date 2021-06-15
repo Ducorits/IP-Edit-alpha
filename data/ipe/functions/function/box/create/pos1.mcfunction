@@ -19,4 +19,6 @@ execute at @e[tag=endpoint_pos] align xyz run summon minecraft:area_effect_cloud
 
 tag @s add ipe_box1
 tag @s add ipe_done
-say 1
+
+
+title @s actionbar {"text":"First Position Set","color":"blue"}

@@ -24,6 +24,7 @@ execute at @e[tag=endpoint_pos] align xyz run summon minecraft:area_effect_cloud
 
 tag @s add ipe_box3
 tag @s add ipe_done
-say 3
+
+title @s actionbar ["",{"text":"Destination Set. ","color":"blue"},{"text":"Creating Portal Box","color":"dark_green"}]
 
 function ipe:function/box/create/create_box
