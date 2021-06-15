@@ -10,8 +10,14 @@ scoreboard objectives add ip_edit dummy
 scoreboard objectives add portal_width dummy
 scoreboard objectives add portal_height dummy
 
-# linked portal scoreboards
+# box portal scoreboards
 scoreboard objectives add ipe_mid_distance dummy
+scoreboard objectives add ipe_box_midX dummy
+scoreboard objectives add ipe_box_midY dummy
+scoreboard objectives add ipe_box_midZ dummy
+scoreboard objectives add ipe_box_destX dummy
+scoreboard objectives add ipe_box_destY dummy
+scoreboard objectives add ipe_box_destZ dummy
 
 # dimension scoreboards
 scoreboard objectives add dimension_info dummy

@@ -31,3 +31,6 @@ execute if entity @s[scores={ipe_function=57}] at @s as @e[type=immersive_portal
 execute if entity @s[scores={ipe_function=54}] at @s as @e[type=immersive_portals:portal,tag=selected] run portal rotate_portal_body 0 0 1 -5
 execute if entity @s[scores={ipe_function=56}] at @s as @e[type=immersive_portals:portal,tag=selected] run portal rotate_portal_body 0 0 1 1
 execute if entity @s[scores={ipe_function=55}] at @s as @e[type=immersive_portals:portal,tag=selected] run portal rotate_portal_body 0 0 1 -1
+
+execute as @e[type=immersive_portals:portal,tag=selected,tag=ipe_box_portal] run function ipe:function/box/rotate_and_place
+execute as @e[type=immersive_portals:portal,tag=selected,tag=ipe_box_portal] run function ipe:function/box/set_box_destination

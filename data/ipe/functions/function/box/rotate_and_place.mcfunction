@@ -1,7 +1,10 @@
 # get midpoint position
-execute as @e[tag=midpoint_pos] store result score PosX ip_edit run data get entity @s Pos[0] 10000
-execute as @e[tag=midpoint_pos] store result score PosY ip_edit run data get entity @s Pos[1] 10000
-execute as @e[tag=midpoint_pos] store result score PosZ ip_edit run data get entity @s Pos[2] 10000
+# execute as @e[tag=midpoint_pos] store result score PosX ip_edit run data get entity @s Pos[0] 10000
+# execute as @e[tag=midpoint_pos] store result score PosY ip_edit run data get entity @s Pos[1] 10000
+# execute as @e[tag=midpoint_pos] store result score PosZ ip_edit run data get entity @s Pos[2] 10000
+scoreboard players operation PosX ip_edit = @s ipe_box_midX
+scoreboard players operation PosY ip_edit = @s ipe_box_midY
+scoreboard players operation PosZ ip_edit = @s ipe_box_midZ
 
 
 # get portal position
@@ -10,7 +13,7 @@ execute store result score @s Ypos run data get entity @s Pos[1] 10000
 execute store result score @s Zpos run data get entity @s Pos[2] 10000
 
 ### get portal rotation data
-execute as @s run portal relatively_move_portal 0 0 1
+execute as @s run portal relatively_move_portal 0 0 -1
 
 execute store result score destinationX ip_edit run data get entity @s Pos[0] 10000
 execute store result score destinationY ip_edit run data get entity @s Pos[1] 10000
@@ -51,4 +54,4 @@ execute store result entity @s Pos[2] double 0.0001 run scoreboard players get P
 portal set_portal_nbt {Fire:0s}
 
 # kill entities used to set destination
-kill @e[tag=destination_pos,limit=1]
+# kill @e[tag=destination_pos,limit=1]

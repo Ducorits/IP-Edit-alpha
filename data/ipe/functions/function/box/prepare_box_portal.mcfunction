@@ -33,4 +33,4 @@ execute as @e[tag=midpoint_pos] store result entity @s Pos[1] double 0.0001 run 
 execute as @e[tag=midpoint_pos] store result entity @s Pos[2] double 0.0001 run scoreboard players get PosZ ip_edit
 
 # get the relative offset of the portal compared to the midpoint
-execute as @e[type=immersive_portals:portal,tag=selected] run function ipe:function/portal_cube/portal_offset
+execute as @e[type=immersive_portals:portal,tag=selected] run function ipe:function/box/portal_offset

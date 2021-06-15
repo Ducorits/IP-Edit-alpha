@@ -8,6 +8,12 @@ scoreboard objectives remove portal_height
 
 # linked portal scoreboards
 scoreboard objectives remove ipe_mid_distance
+scoreboard objectives remove ipe_box_midX
+scoreboard objectives remove ipe_box_midY
+scoreboard objectives remove ipe_box_midZ
+scoreboard objectives remove ipe_box_destX
+scoreboard objectives remove ipe_box_destY
+scoreboard objectives remove ipe_box_destZ
 
 # dimension scoreboards
 scoreboard objectives remove dimension_info

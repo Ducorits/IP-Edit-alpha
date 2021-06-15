@@ -1,5 +1,3 @@
-# kill destpoint entity
-kill @e[tag=destpoint_pos]
 #reset stuff
 tag @s remove stop
 scoreboard players reset @s raycastCount
@@ -21,6 +19,11 @@ scoreboard players operation blockSideX rc_system -= @s Xpos
 scoreboard players operation blockSideY rc_system -= @s Ypos
 scoreboard players operation blockSideZ rc_system -= @s Zpos
 
-execute at @e[tag=endpoint_pos] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:2147483647,Particle:"block minecraft:air",Radius:0,Tags:["destpoint_pos"]}
+# now everything that has to do with the first portal position, i am going to use the ip_edit scoreboard but should replace later with another, so multiplayer compatability becomes a thing.
+execute at @e[tag=endpoint_pos] align xyz run summon minecraft:area_effect_cloud ~.5 ~.5 ~.5 {Duration:2147483647,Particle:"block minecraft:air",Radius:0,Tags:["box_destination","ipe_box"]}
 
-execute as @e[tag=selected,type=immersive_portals:portal] run function ipe:function/portal_cube/set_cube_destination
+tag @s add ipe_box3
+tag @s add ipe_done
+say 3
+
+function ipe:function/box/create/create_box
